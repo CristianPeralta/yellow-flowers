@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores Amarillas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-blue-50 overflow-hidden">
+    <div id="game-container" class="relative w-full h-screen">
+        <div id="score" class="absolute top-4 right-4 bg-yellow-100 px-4 py-2 rounded-full shadow-lg text-yellow-800 font-bold z-10">
+            Pétalos: <span id="petals-count">0</span>/6
+        </div>
+        
+        <div id="bouquet" class="hidden fixed inset-0 flex flex-col items-center justify-center text-center z-20">
+            <div class="message-container">
+                <div class="text-5xl font-bold text-yellow-600 mb-8 animate-bounce">Con cariño para ti 😉</div>
+            </div>
+            <div class="bouquet-container">
+                <div class="bouquet-petals" id="bouquet-petals">
+                    <!-- Los pétalos se agregarán dinámicamente con JavaScript -->
+                </div>
+                <div class="flower-bouquet">
+                    <img src="ramo.png" alt="Ramo de flores" class="bouquet-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
